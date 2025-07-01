@@ -1,10 +1,25 @@
 import React from "react";
-// css
-// import "../css/Header.css";
-import styles from "../css/Header.module.css";
+import { BgObj, BgObjRed } from "./bg";
 
 function Header() {
-  return <div className={styles.Header}>Header</div>;
+  // js 코드 자리
+  const title = "웹 서비스 제목";
+  const version = 0.5;
+  function say() {
+    return "하하하";
+  }
+
+  const isLogin = false;
+
+  // 아래는 html jsx 코드 자리
+  return (
+    <div>
+      <div style={isLogin ? BgObj : BgObjRed}>{title}</div>
+      <div>
+        버전:{version} {say()}
+      </div>
+    </div>
+  );
 }
 
 export default Header;
