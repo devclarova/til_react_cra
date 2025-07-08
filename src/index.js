@@ -10,6 +10,7 @@ import Photos from "./pages/Photos";
 import Posts from "./pages/Posts";
 import Albums from "./pages/Albums";
 import Comments from "./pages/Comments";
+import Test from "./pages/Test";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 const Hello = function () {
@@ -17,11 +18,6 @@ const Hello = function () {
 };
 root.render(
   <div className="wrap">
-    <Posts></Posts>
-    <Albums></Albums>
-    <Photos></Photos>
-    <Todos></Todos>
-    <Users></Users>
-    <Comments></Comments>
+    <Test></Test>
   </div>,
 );
