@@ -11,6 +11,7 @@ import Posts from "./pages/Posts";
 import Albums from "./pages/Albums";
 import Comments from "./pages/Comments";
 import Test from "./pages/Test";
+import RegisterPage from "./pages/RegisterPage";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 const Hello = function () {
@@ -18,6 +19,6 @@ const Hello = function () {
 };
 root.render(
   <div className="wrap">
-    <Test></Test>
+    <RegisterPage></RegisterPage>
   </div>,
 );
