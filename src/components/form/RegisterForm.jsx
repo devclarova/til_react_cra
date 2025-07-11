@@ -30,6 +30,8 @@ function RegisterForm({
   handleChange,
   handleCheckBoxChange,
   handleFilePreview,
+  handleDeleteFile,
+  handleSubmit,
 }) {
   // js 자리
   // 이미지 미리보기 기능
@@ -42,7 +44,7 @@ function RegisterForm({
   // jsx 자리
   return (
     <FormContainer>
-      <form>
+      <form onSubmit={handleSubmit}>
         <InputUi
           id={"user_name"}
           type="text"
@@ -158,7 +160,10 @@ function RegisterForm({
           {/* <ImagePreview src={formData.user_image_preview} /> */}
           {/* {formData.user_image_preview ? <ImagePreview src={formData.user_image_preview} /> : null} */}
           {formData.user_image_preview && (
-            <ImagePreview src={formData.user_image_preview} />
+            <ImagePreview
+              src={formData.user_image_preview}
+              onClick={handleDeleteFile}
+            />
           )}
 
           <ImageUploadLabel htmlFor="user_image">이미지 선택</ImageUploadLabel>
