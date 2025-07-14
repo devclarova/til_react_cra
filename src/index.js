@@ -12,6 +12,7 @@ import Albums from "./pages/Albums";
 import Comments from "./pages/Comments";
 import Test from "./pages/Test";
 import RegisterPage from "./pages/RegisterPage";
+import Todo from "./pages/Todo";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 const Hello = function () {
@@ -19,6 +20,6 @@ const Hello = function () {
 };
 root.render(
   <div className="wrap">
-    <Test />
+    <Todo />
   </div>,
 );
