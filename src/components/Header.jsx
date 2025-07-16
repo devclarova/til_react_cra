@@ -1,9 +1,10 @@
 import React from "react";
+import { TbBackground } from "react-icons/tb";
 import { Link } from "react-router-dom";
 
 function Header({ children, company, service, setIsLogin }) {
   return (
-    <header>
+    <header style={{ Background: "yellow" }}>
       <div onClick={() => setIsLogin(true)}>로그인 하기</div>
       <div onClick={() => setIsLogin(false)}>로그아웃 하기</div>
       {children}
