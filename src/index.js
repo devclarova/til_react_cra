@@ -10,6 +10,6 @@ import Index from "./pages/todo/Index";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <div className="wrap">
-    <Index />
+    <App />
   </div>,
 );
